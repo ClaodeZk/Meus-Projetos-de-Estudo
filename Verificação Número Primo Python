@@ -1,0 +1,113 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOObfWW2lBRTzEqzU6mFbAm",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ClaodeZk/Meus-Projetos-de-Estudo/blob/main/Verifica%C3%A7%C3%A3o%20N%C3%BAmero%20Primo%20Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "PRATICA: VERIFICAÇÃO DE NÚMERO PRIMO COM PYTHON\n"
+      ],
+      "metadata": {
+        "id": "MTUTDrEvpNjw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 15,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "j7BEqUKPnac2",
+        "outputId": "09454326-d350-4a48-fc71-8f4558ad452c"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Digite um número inteiro não negativo 11\n"
+          ]
+        }
+      ],
+      "source": [
+        "while True:\n",
+        "  try:\n",
+        "    num = int(input('Digite um número inteiro não negativo '))\n",
+        "    if(num>0):\n",
+        "      break\n",
+        "  except:\n",
+        "        print('O programa só aceita números inteiros não-negativos')\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n",
+        "x = np.round(num/2)\n",
+        "ehPrimo = True\n",
+        "while x>1:\n",
+        "  if(num % x == 0):\n",
+        "    ehPrimo = False\n",
+        "    break\n",
+        "  x = x -1\n",
+        "\n",
+        "if(ehPrimo):\n",
+        "  print(f'O número {num} é primo')\n",
+        "else:\n",
+        "  print(f'O número {num} NÃO é primo')\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-YM1vivPqJYZ",
+        "outputId": "ef1cc3bb-b5a6-42ce-afe2-e120908971ff"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "O número 11 é primo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "EMGp0iQ0qV3v"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
